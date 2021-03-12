@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Hyperlinks and Images</title>
+<meta charset="UTF-8">
+
+<style>
+body {
+	background-color: #e6f7ff;
+}
+h1 {
+	font-family: sans-serif;
+}
+p {
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 2px;
+}
+p#back-white {
+	background-color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Hyperlinks and Images</h1>
+
+<h2><u>Hyperlinks</u></h2>
+<p>
+Hyperlinks, also known as links, are used to link/bring the users on a web page to another web page. By default, 
+hyperlinked texts are blue in colour before it is cliked. Once clicked, it will turn to purple colour. The clicked 
+links will remain purple until you clear your search history in the web broswer. The hyperlinked text will turn red 
+if the hyperlinked text is active. Below is an example of a hyperlink.
+</p>
+<p id="back-white">
+Go to <a href="https://www.google.com" target="_blank">Google</a>.
+</p>
+
+<h3><u>Attributes for Hyperlink Tag</u></h3>
+<p>
+In the hyperlink tag, there are 2 attributes that are:</br>
+1. href="<i>value</i>"<br>
+2. target="<i>value</i>"
+</p>
+
+
+<h3><u>How to Use the Hyperlink Tag</u></h3>
+<p>
+This is how a hyperlink which brings the user to http://www.google.com is written.
+</p>
+<p>
+&lt;p&gt;<br>
+Go to &lt;a href="http://www.google.com" target="_blank"&gt;Google
+&lt;/a&gt;<br>
+&lt;/p&gt;
+</p>
+<p>
+1. &lt;a&gt;&lt;/a&gt; is the hyperlink tag. <br>
+2. The <b>href</b> attribute tells the web browser where to go after the hyperlinked text is clicked. <br>
+3. The <b>target</b> attribute tells the web browser how and where to display the web page which is linked to.
+</p>
+<p>
+NOTES<br>
+1. The value for the <b>href</b> attribute is either a file destination or a website. For websites, the 
+value must have "http://" or else the web browser will think that it is a file destination and searches 
+for the file in your directory. To link to another web page in a file in the same directory, declare the 
+filename <b>TOGETHER WITH ITS EXTENSION</b>. To link to a web page inside of a different directory, declare
+the name of the directory and put a forward slash(<b>/</b>) until you reach the file you want to link to. <br><br>
+2. The easiest value to use in the <b>target</b> attribute is <b>_blank</b>, this will display the linked web 
+page in a new tab. If you want the linked web page to display in the original web page, there is no need to use 
+the <b>target</b> attribute.
+</p>
+
+<hr>
+<br>
+
+<h2><u>Images</u></h2>
+<p>
+In a web page, you can also insert images by using the image tag, &lt;img&gt;. An image tag is an empty element and 
+doesn't need to be closed. 
+</p>
+<p>
+When inserting an image, you might want to resize or declare the size of your image. This can be done by using the 
+<b>width</b> and <b>height</b> attributes. The values of these two attributes are numbers, e.g. height="300". The
+web broswer will reconise the number as the number of pixels.
+</p>
+<p>
+If you would like to changes the size of an image but maintain its shape, this is when Mathematics comes in. You will need
+to calculate the size of the image using ratio. Below is the formula: <br>
+<pre>
+Let original width=x<sub>o</sub>
+Let original height=y<sub>o</sub>
+Let new width=x<sub>n</sub>
+Let new height=y<sub>n</sub>
+
+x<sub>o</sub>/y<sub>o</sub> = x<sub>n</sub>/y<sub>n</sub>
+</pre>
+</p>
+<p>
+If your final answer is a double(number with decimals) like 367.39, just round it off to the nearest integer. One pixel is no 
+big deal as a pixel is very small in size(smaller than 1mm).
+</p>
+<br>
+<br>
+
+
+
+</body>
+
+</html>

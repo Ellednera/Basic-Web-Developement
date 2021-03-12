@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Introduction to CSS3</title>
+<meta charset="UTF-8">
+
+<style>
+body {
+	background-color: #e6f7ff;
+}
+p {
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 2px;
+}
+h1, h2 {
+	font-family: sans-serif;
+}
+iframe {
+	width:400px;
+	height: 225px;
+	background-color: #ffe6b3;
+}
+img#skeleton {
+	width: 400px;
+	height: 250px;
+}
+img#semicolon {
+	width: 320px;
+	heigth: 370px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>CSS</h1>
+<p>
+CSS stands for Cascade/Cascading Style Sheets. The current version is version 3, and it can be written as CSS3.
+</p>
+
+<h2><u>What are the Uses of CSS?</u></h2>
+<p>
+CSS is used to decorate your HTML pages. It is like putting a layer of flesh, skin, clothes as well as spraying some perfume on a skeleton of 
+a human body.
+</p>
+<img id="skeleton" src="pictures/html-css.jpg">
+<p>
+With CSS, you can do more amazing things that are not supported in HTML, for example making a hyperlink change its colour when 
+your pointer is pointing at it, highlight text when the pointer points at it, changing the colour of some words in a sentence, 
+so on and so forth.
+</p>
+
+<h2><u>How CSS Scripts Look</u></h2>
+<iframe src="5-CSS-link.css"></iframe>
+<!-- CSS script is put into an iframe
+<p>
+<pre>
+<code>
+body {
+	background-color: #cccccc;
+}
+p {
+	font-family: "MV Boli", Cursive;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 3px;
+	color: black;
+}
+img.butterfly {
+	height: 350px;
+	width: 400px;
+}
+table {
+	border-radius: 3px;
+}
+span.red {
+	color: red:
+}
+
+</code>
+</pre>
+</p>
+-->
+
+
+<h2><u>Where Should CSS Scripts Be Put?</u></h2>
+<p>
+There are 3 ways to use CSS in your HTML pages:<br><br>
+1. Inline: Using the style attribute, style="value"<br><br>
+2. Internal: Using the style tag, &lt;style&gt;&lt;/style&gt;, inside of the head, &lt;head&gt;&lt;/head&gt;, tag<br><br>
+3. External: Using a link tag, &lt;link rel="value" href="destination"&gt;, to link CSS scripts from a different place
+</p>
+
+<h2><u>The Structure of a CSS Syntax</u></h2>
+<p>
+A CSS syntax consists of a <b>SELECTOR</b> and a <b>DECLARATION</b>.
+</p>
+<p>
+Here is an example of a CSS syntax(command):<br>
+<pre>
+<code>
+p {color: black;}
+</code>
+</pre>
+</p>
+
+<p>
+1. <b>p</b> is a selector. A selector defines which HTML tag it is formatting/pointing to.
+</p>
+<p>
+2. <b>color: black;</b> is a declaration. A declaraiton defines how the text in the &lt;p&gt; tag should be formatted.
+</p>
+<p>
+3. A declaration consists of a PROPERTY and a VALUE. In the example above, <b>color</b> is a property while <b>black</b> 
+is the value for the <b>color</b> property.
+</p>
+<p>
+<b>NOTES</b><br>
+1. The property and the value of the property is separated by a colon(<b>:</b>) <br>
+2. Every declaration ends with a semicolon(<b>;</b>)<br>
+3. A pair of curly braces/brackets, {} is used after the selector and all the declarations are written in the pair 
+of curly brackets. <br>
+4. Each property in CSS has its own values. <br>
+</p>
+
+<hr>
+
+<p>
+Now, let's rest for a while.
+</p>
+<p>
+CSS is like a high-level programming language and all syntaxes/commands must end with a semicolon or else the command won't work.<br>
+The semicolon is the famous hide-and-seek champion in the world of programming since the year 1985 or 1960 as some might say.
+</p>
+<img id="semicolon" src="pictures/semicolon.png">
+<br><br>
+
+
+</body>
+
+</html>

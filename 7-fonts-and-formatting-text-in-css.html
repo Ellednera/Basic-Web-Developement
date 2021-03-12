@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Fonts and Formatting Text in CSS</title>
+<meta charset="UTF-8">
+
+<style>
+body {
+	background-color: #e6f7ff;
+}
+p {
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 2px;
+}
+h1, h3, li {
+	font-family: sans-serif;
+}
+h3.sf, p.sf {
+	font-family: serif;
+}
+h3.ssf, p.ssf {
+	font-family: sans-serif;
+}
+h3.mnsp, p.mnsp {
+	font-family: monospace;
+}
+h3.cs, p.cs {
+	font-family: cursive;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Fonts</h1>
+<p>
+Fonts are used to tell the web browser what type of text to print. In web developement, fonts are divided into 
+two groups, that are generic family and font family. The generic family is like the "gene" of a font while the 
+font family contains the exact name of certain fonts, for example Times New Roman, MV Boli and any other fonts 
+that can be found in Microsoft Words or in any other programmes similar to it. 
+</p>
+<p>
+Usually, we define the font of certain text with the font family followed by the generic family just in case 
+the web browser does not support the font family. This is because not all the computers have the same font names. 
+The web browser compares the font family with the fonts available on the clients' computer. When the font family 
+is not available, the web browser will use the next font or the generic family to format the text.
+</p>
+<p>
+There are four generic families:
+</p>
+<ol>
+<li>Serif(e.g. Times New Roman)</li>
+<li>Sans-serif(e.g. Arial)</li>
+<li>Monospace(e.g. Lucida Console)</li>
+<li>Cursive(e.g. MV Boli)</li>
+</ol>
+
+<p>
+This is how the text in its generic family looks like:
+</p>
+
+<h3 class="sf">1. Serif</h3>
+<p class="sf">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum.
+</p>
+
+<hr>
+
+<h3 class="ssf">2. Sans-serif</h3>
+<p class="ssf">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum.
+</p>
+
+<hr>
+
+<h3 class="mnsp">3. Monospace</h3>
+<p class="mnsp">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum.
+</p>
+
+<hr>
+
+<h3 class="cs">4. Cursive</h3>
+<p class="cs">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum.
+</p>
+<br><br>
+
+<p>
+Notes: You can mix and match the font family and the generic family.
+</p>
+<br><br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Forms</title>
+<meta charset="UTF-8">
+<style>
+body {
+	background-color: #e6f7ff;;
+}
+p {
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 2px;
+}
+h1, h3 {
+	font-family: sans-serif;
+}
+span#cont {
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Forms</h1>
+<p>
+Forms are used to collect user input. To create forms in HTML, the &lt;form&gt;&lt;/form&gt; tag
+is used. There are 3 attributes used in the form tag. They are the action, method and enctype attribute.
+</p>
+<p>
+The action attribute tells the browser where to take the user after the user submit the form. This 
+attribute also tells the browser where to process the data of a form. The value for the action attribute 
+is a path of a destination.It can be an URL of just a path. You will learn how the data is processed in PHP.
+</p>
+<p>
+The method attribute specifies whether of not the data should be present in the URL after the user submit 
+his/her data. There are only 2 values for the method attribute--post and get. <br>
+When method="get", all the data will show in the URL and all of them will be processed on the web page the 
+action attribute specifies. <br>
+When method="post", all the data will be sent to the server to be processed and no data will be shown in the 
+URL. This is very useful when you are going to process sensitive data for example passwords, e-mail, handphone 
+number etc.
+</p>
+<p>
+The enctype attribute tells the server how the data of the form should be encoded. Another way of saying is what type of 
+data is present in the form and how should they be processed. The most commom value is "multipart/form-data" and this 
+will let the broswer know that there is a file upload. Using enctype="multipart/form-data" in a form which has no 
+file uploads will not cause any errors.
+</p>
+
+<h3>User Inputs</h3>
+<p>
+To create a user input(text box), use the &lt;input&gt; tag. The input tag is an empty element so it has no closing tag.
+Inside the input tag is usually these 3 attribute-- type, name and value.<br><br>
+<span id="cont">To be continued...<br>
+Sorry, there are too many things for this topic.
+</span>
+</p>
+
+<h3>Data Processing</h3>
+<p>
+Whenever someone fills a HTML form and click the submit button, the form data will be passed to either the URL or to the 
+server.
+The HTML &lt;form&gt;  tag has an attribute named "method" to specify where we want the data to go. There are 2 types of actions,
+"GET" and "POST" (case sensitive, beware). "GET" will send the data into the URL directly and the data is visible to the user. This
+method of sending data is not safe at all (with exceptions, of course). Usually, we send the data to the server through "POST" so that
+no one can see the data except the programmer, the programmer's program and the server itself, sometimes a good hacker too :)
+</p>
+
+<h3>Languages Used for Data Processing</h3>
+<p>
+The most common language used is PHP (Hypertext Preprocessor, it used to be <b>P</b>ersonal <b>H</b>ome <b>P</b>age). To run PHP, what 
+we usually do is to download a virtual server (XAMPP if you're using Windows). XAMPP supports several languages specifically for web 
+programming--PHP, SQL (with a database called MariaDB or MySQL) and Perl for CGI programming. Perl used to be king of all the languages 
+during the 2000 period. It's still alive and it's awesome!
+</p>
+
+<dl>
+	<dt>PHP</dt>
+		<dd>This is the most common language used to interact with the form data. PHP is a programming language.</dd>
+	<dt>SQL</dt>
+		<dd>
+			"Structured Query Language" is used to interact with the database(DB). After processing data from a form, these data can be stored 
+			into the server, we call it the database. SQL can be embeded with PHP through the functions starting with "mysql_*" or "mysqli_*"
+			"mysqli_*" is more secure.
+		</dd>
+	<dt>Perl</dt>
+		<dd>
+			Perl is....yes, just Perl :) Actually, its full name is "Practical Extraction and Report", but Perl is not a acronynm. The word "Perl" 
+			was chosen and the the gaps were filled in later, very different than the languages out there. It was supposed to be named "Pearl", but 
+			another language with this name existed back then, so we ended up with Perl. Perl was meant to replace the C language (it was also written using C)
+			, but that didn't happen. In web porogramming, Perl can be used to write (generate) HTML web pages, process data and interact with the database. 
+			The best part of Perl is that it can control how the server should treat the webpage(in simple words--to display or not to display the web page).
+			Perl can also be used as a stand-alone programming language. Its grammar is strange but powerful. Perl ressembels maths a lot. Perl makes more sense 
+			compared to other languages. Perl's logic is like maths logic, everything derived must have a source. This is not true with other languages because 
+			their creator just invent it in a way they liked it. Based on my understanding, Perl is HTML+CSS+PHP+SQL, pretty cool, huh?
+		</dd>
+	<dt>Ruby</dt>
+		<dd>
+			Ruby itself can be used to do web programming too. But, its not "pure" Ruby. Ruby has a framework(or library or whatever its called) to do this job--Ruby on Rails.
+			This language seems to be dying out especially when it comes to web programming. Plus, Ruby iteslf is slow.
+		</dd>
+	<dt>Javascript</dt>
+		<dd>
+			Javascript is usually used to do front-end stuff, like HTML and CSS. However, there's a library out there called Node.js which claim to be able to interact with databases.
+			You might want to check it out yourself, I don't know much about Javascript stuff, sorry.
+		</dd>
+</dl>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+	background-color: #cccccc;
+}
+p {
+	font-family: "MV Boli", Cursive;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 3px;
+	color: black;
+}
+img.butterfly {
+	height: 350px;
+	width: 400px;
+}
+table {
+	border-radius: 3px;
+}
+span.red {
+	color: red:
+}
